@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Faca login</h1>
+
+    <div th:if="${param.erro}">Senha ou usuario invalido</div>
+
+    <div th:if="${param.logout}">Voce foi deslogado</div>
+
+    <form action="">
+      <input type="text" name="username" placeholder="Usuário" />
+      <br />
+      <input type="password" name="password" placeholder="Senha" />
+      <br />
+      <input type="text" value="Entrar" />
+    </form>
+  </body>
+</html>
